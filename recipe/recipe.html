@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quinoa Recipe</title>
+    <meta name = "Quinoa recipe" content = "recipe, quinoa, tomatoes">
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+  </head>
+  <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#directions">Directions</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1>Quinoa Tabbouleh</h1>
+
+            <h2 class="title">A Middle Eastern salad - perfect for summer!</h2>
+            <figure>
+                    <img src="https://assets.epicurious.com/photos/54b0b5bec6a78d1a4a60b208/6:4/w_620%2Ch_413/395939_quinoa-tabbouleh_1x1.jpg"
+                        alt="Quinoa Tabbouleh">
+                    <figcaption >
+                    <a class="caption" href="https://en.wikipedia.org/wiki/Tabbouleh">The history of Tabbouleh</a>
+                    </figcaption>
+            </figure>
+                
+        
+            <h2 id="ingredients">Ingredients</h2>
+            <ul> 
+                <li>1 cup Quinoa</li>
+                <li>1/2 teaspoon kosher salt</li>
+                <li>2 tablespoons lemon juice</li>
+                <li>1 garlic clove</li>
+                <li>1/2 cup olive oil</li>
+                <li>1 large english cucumber</li>
+                <li>1 pint cherry tomatoes</li>
+                <li>2/3 cup parsley</li>
+                <li>1/2 cup chopped mint</li>
+                <li>2 scallions</li>
+            </ul>
+        
+            <h2 id="directions">Directions</h2>
+            <p>Boil the quinoa according to directions. Fluff with a fork. Let cool. Whisk the lemon juice
+                and garlic in a small bowl. Gradually whisk in olive oil. Season with salt and pepper. Once quinoa is cooled, add dressing and remaining ingredients.
+                Toss to coat.  
+            </p>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <form action="/reviews" method="post">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name">
+
+                <label for="rating">Rating</label>
+                1<input type="radio" name="rating" value="1" checked>
+                2<input type="radio" name="rating" value="2">
+                3<input type="radio" name="rating" value="3">
+                4<input type="radio" name="rating" value="4">
+                5<input type="radio" name="rating" value="5">
+
+                <label for="expertise">Cooking Expertise</label>
+
+                <select if ="expertise" name="expertise">
+                    <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+                    <option value="Sometimes Cook">Sometimes Cook</option>
+                    <option value="Cook Everyday">Cook Everyday</option>
+                    <option value="COoking is a Hobby">Cooking is a Hobby</option>
+                    <option value="Professional Chef">Professional Chef</option>
+                </select>
+
+                <label>Review
+                    <textarea name="review" id="" cols="30" rows="10"></textarea>
+                </label>
+
+                <input type="submit" value="Submit Review">
+            </form>
+        </section>
+    
+        <footer class="footer">
+            <p> Original Recipe by: 
+                <a href="https://www.epicurious.com/recipes/food/views/quinoa-tabbouleh-395939">Epicurious</a>
+            </p>
+        </footer>
+
+    </body>
+</html>

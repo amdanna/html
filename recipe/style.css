@@ -1,0 +1,15 @@
+body {
+    background-image: url(./spoons.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Helvetica;
+}
+
+.title {
+    color: rgb(218, 38, 38);
+}
+
+.caption { color: rgb(26, 73, 26)
+    ; 
+}
+
